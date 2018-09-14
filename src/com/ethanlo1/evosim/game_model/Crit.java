@@ -1,3 +1,4 @@
+package com.ethanlo1.evosim.game_model;
 
 public class Crit {
 	
@@ -38,7 +39,7 @@ public class Crit {
 	
 	private int reproCounter = 0;
 	
-	Crit(int maxHealth, int health, double guts, double speed, int eyesight, int repro, double x, double y){
+	public Crit(int maxHealth, int health, double guts, double speed, int eyesight, int repro, double x, double y){
 
 		this.maxHealth = maxHealth;
 		this.health = health;

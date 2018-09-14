@@ -1,3 +1,4 @@
+package com.ethanlo1.evosim.game_model;
 
 public class Food {
 	
@@ -8,7 +9,7 @@ public class Food {
 
 	
 	
-	Food(double xx, double yy){
+	public Food(double xx, double yy){
 		x = xx;
 		y = yy;
 		

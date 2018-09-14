@@ -1,3 +1,4 @@
+package com.ethanlo1.evosim.game_model;
 
 public class Pred {
 	
@@ -37,7 +38,7 @@ public class Pred {
 
 	private int reproCounter = 1;
 	
-	Pred(int maxHealth, int health, double speed, int eyesight, int repro, double x, double y){
+	public Pred(int maxHealth, int health, double speed, int eyesight, int repro, double x, double y){
 		this.maxHealth = maxHealth;
 		this.health = health;
 		this.speed = speed;

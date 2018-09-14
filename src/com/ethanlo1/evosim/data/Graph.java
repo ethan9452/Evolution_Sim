@@ -1,3 +1,4 @@
+package com.ethanlo1.evosim.data;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class Graph extends JFrame{
 	private double big;
 	private double small;
 
-	Graph(String title, ArrayList<Double> data){
+	public Graph(String title, ArrayList<Double> data){
 		setSize(700,700);
 		setVisible(true);
 		setResizable(false);

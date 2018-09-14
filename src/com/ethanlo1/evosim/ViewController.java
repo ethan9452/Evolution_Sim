@@ -1,3 +1,4 @@
+package com.ethanlo1.evosim;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
@@ -12,6 +13,11 @@ import java.util.Stack;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+
+import com.ethanlo1.evosim.data.Graph;
+import com.ethanlo1.evosim.game_model.Crit;
+import com.ethanlo1.evosim.game_model.Food;
+import com.ethanlo1.evosim.game_model.Pred;
 
 /** 
  * Method Summary
@@ -28,14 +34,11 @@ import javax.swing.Timer;
  * critAnalysis(): enters in data about the animals' attributes and stores them to a ArrayLists
  * stopSimRetData(): pauses the simulation and displays graphs showing how the animal's attributes have changed
  * over time
- * 
- *
- *
  */
 
 
 
-public class Field extends JPanel implements ActionListener, MouseListener, MouseMotionListener{
+public class ViewController extends JPanel implements ActionListener, MouseListener, MouseMotionListener{
 
 	ArrayList<Crit> crit = new ArrayList<Crit>(0);
 	ArrayList<Food> food = new ArrayList<Food>(0);
@@ -57,9 +60,6 @@ public class Field extends JPanel implements ActionListener, MouseListener, Mous
 	ArrayList<Double> predEyesight = new ArrayList<Double>(); //stores avg eyesight of preds
 	ArrayList<Double> predRepro = new ArrayList<Double>(); //stores avg repro time of preds
 	ArrayList<Double> predPop = new ArrayList<Double>(); //stores pop size of preds
-
-
-
 
 
 	//timer and timer counters
@@ -104,7 +104,7 @@ public class Field extends JPanel implements ActionListener, MouseListener, Mous
 	double initPredY = 700;
 
 
-	Field(){
+	public ViewController(){
 
 		timer = new Timer(timerSpeed,this);
 		addMouseListener(this);
